@@ -44,7 +44,9 @@ module.exports = (_, argv) => ({
       name: "add_post",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./AddPostForm": "./src/components/AddPostForm",
+      },
       shared: {
         ...deps,
         react: {
